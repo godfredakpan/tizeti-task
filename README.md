@@ -1,5 +1,9 @@
 # React: Hacker Dormitory
 
+#Loom Video:
+
+https://www.loom.com/share/2626efa9f8ff459eb58f08d8b7f508a4
+
 Given a partially completed React application with the HTML template and few built-in functionalities, your task is to implement a resident directory that makes note of a list of residents in the dormitory.
 
 Certain core React functionalities have already been implemented. Complete the React application as shown below in order to pass all the unit tests.
