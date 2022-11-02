@@ -1,6 +1,7 @@
 {
   "name": "hacker-dormitory",
   "version": "0.1.0",
+  "license": "MIT",
   "homepage": "http://godfredakpan.github.io/tizeti-task",
   "private": true,
   "dependencies": {
@@ -15,9 +16,10 @@
     "save": "^2.3.1"
   },
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "prestart": "npm install",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "pretest": "npm install",
     "start": "cross-env HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
     "test": "cross-env CI=true ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
@@ -30,7 +32,8 @@
     "expect": "^21.2.1",
     "gh-pages": "^4.0.0",
     "jest-junit": "^3.3.0",
-    "react-test-renderer": "^16.2.0"
+    "react-test-renderer": "^16.2.0",
+    "webpack-cli": "^4.10.0"
   },
   "browserslist": {
     "production": [
